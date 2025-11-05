@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-caveat: "Caveat Brush", cursive;
+    --color-blackPin: #1b1b1b;
+    --color-grayPin: #323232;
+    --color-beigePin: #ffe7d0;
+    --color-orangePin: #fc6e20;
+}
+
