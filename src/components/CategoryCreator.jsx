@@ -1,0 +1,1 @@
+// componente que recebe o valor do input dentro do botao de criar categoria, envia uma prop para o BoxList com o valor(titulo), que sera usado para criar ua nova categoria de mesmo nome
