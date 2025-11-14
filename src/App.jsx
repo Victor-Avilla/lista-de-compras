@@ -35,7 +35,7 @@ function App() {
   }
 
   return (
-    <main className='bg-linear-to-b from-grayPin to-blackPin h-[2000px] '>
+    <main className='bg-linear-to-b from-grayPin to-blackPin min-h-screen overflow-auto '>
       <header className='flex bg-linear-to-b from-amber-500 to-orangePin justify-center items-center h-16  drop-shadow-2xl rounded-b-lg'><h1 className='text-beigePin text-[42px] font-caveat'>Minha Lista de Compras</h1></header>
 
       <div className="flex justify-center max-w-2xl mx-auto w-auto drop-shadow-2xl">
@@ -51,7 +51,7 @@ function App() {
 
         <button onClick={() => addItem()} className="bg-linear-to-b from-amber-500 to-orangePin align-middle h-10 my-10 w-auto max-w-20 px-2 pb-3 rounded-lg bg-grayPin text-beigePin text-3xl shadow ">+</button>
       </div>
-      <div className="grid grid-cols-1 justify-items-center  min-h-screen md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-1 justify-items-center max-h-screen min-h-screen md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
 
         <BoxList inputValue={list} deleteItem={deleteItem} title={"cursos"} completedItem={completedItem} />
         <BoxList inputValue={list} deleteItem={deleteItem} title={"livros"} completedItem={completedItem} />
