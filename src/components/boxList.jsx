@@ -8,8 +8,8 @@ export default function BoxList({ inputValue, deleteItem, title, completedItem }
             <ul ><label className="text-2xl bold capitalize"> {title}</label>
                 {itemReader.map((obj) => (
                     <li className={`my-2 capitalize break-words ${obj.itemDone ? "line-through text-neutral-400 " : ""}`} key={obj.id}>{obj.item}
-                        <button onClick={() => deleteItem(obj.id)} className=" float-right rounded-lg w-5 h-5 ml-3 text-red-600 text-2xl">—</button>
-                        <button onClick={() => completedItem(obj.id)} className={`float-right rounded-lg w-6 h-6 px-0.5 bg-linear-to-b text-middle from-amber-500 to-orangePin text-xl ${obj.itemDone ? "hidden " : ""}`} >✓ </button></li>
+                        <button onClick={() => deleteItem(obj.id)} className=" float-right rounded-lg w-5 h-5 ml-3 cursor-pointer text-red-600 text-2xl">—</button>
+                        <button onClick={() => completedItem(obj.id)} className={`float-right rounded-lg w-6 h-6 px-0.5 cursor-pointer bg-linear-to-b text-middle from-amber-500 to-orangePin text-xl ${obj.itemDone ? "hidden " : ""}`} >✓ </button></li>
                 ))}
 
             </ul>

@@ -42,14 +42,14 @@ function App() {
         <input type='text' value={item} placeholder='Adicione um item' onChange={(e) => setItem(e.target.value)}
           className='bg-linear-to-b from-grayPin to-blackPin align-middle h-10 w-auto max-w-2xs my-10 pl-2 rounded-l-lg capitalize bg-grayPin placeholder:font-light placeholder:text-neutral-400 focus:outline-none text-beigePin ' />
 
-        <select id="category" defaultValue={"comida"} title="Escolha uma categoria" className="bg-linear-to-b rounded-r-lg from-grayPin to-blackPin align-middle h-10 w-auto max-w-2xs my-10 pl-2 bg-grayPin placeholder:text-beigePin focus:outline-none text-beigePin" name="category">
+        <select id="category" defaultValue={"comida"} title="Escolha uma categoria" className="cursor-pointer bg-linear-to-b rounded-r-lg from-grayPin to-blackPin align-middle h-10 w-auto max-w-2xs my-10 pl-2 bg-grayPin placeholder:text-beigePin focus:outline-none text-beigePin" name="category">
           <option value="cursos">Cursos</option>
           <option value="livros">Livros</option>
           <option value="suplementos">Suplementos</option>
           <option value="outros">Outros</option>
         </select>
 
-        <button onClick={() => addItem()} className="bg-linear-to-b from-amber-500 to-orangePin align-middle h-10 my-10 w-auto max-w-20 px-2 pb-3 rounded-lg bg-grayPin text-beigePin text-3xl shadow ">+</button>
+        <button onClick={() => addItem()} className="cursor-pointer bg-linear-to-b from-amber-500 to-orangePin align-middle h-10 my-10 w-auto max-w-20 px-2 pb-3 rounded-lg bg-grayPin text-beigePin text-3xl shadow ">+</button>
       </div>
       <div className="grid grid-cols-1 justify-items-center max-h-screen min-h-screen md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
 
